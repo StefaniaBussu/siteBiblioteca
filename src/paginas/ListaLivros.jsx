@@ -24,8 +24,8 @@ function ListaLivros() {
     <div className="container mt-5">
       <h2>Lista de Livros</h2>
       <div className="row">
-        {livros.map((livro) => (
-          <LivroCard key={livro.id} livro={livro} onAdicionarCarrinho={handleAdicionarCarrinho} />
+        {livros.map((livro, index) => (
+          <LivroCard id={`livro${index+1}`} key={livro.id} livro={livro} onAdicionarCarrinho={handleAdicionarCarrinho} />
         ))}
       </div>
 
