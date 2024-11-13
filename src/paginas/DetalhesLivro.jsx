@@ -32,7 +32,7 @@ function DetalhesLivro() {
       <p>Preço: {livro.preco}</p>
       <p>Estoque: {livro.estoque}</p>
       <p>Quantidade de Páginas: {livro.quatidadePag}</p>
-      <button className="btn btn-success mt-3"  onClick={() => handleAdicionarCarrinho(livro)}>Adicionar ao Carrinho</button>
+      <button className="btn btn-success mt-3"  onClick={() => onAdicionarCarrinho(livro)}>Adicionar ao Carrinho</button>
 
       <ModalCarrinho show={mostrarModal} onClose={handleFecharModal} />
     </div>
