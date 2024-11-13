@@ -6,11 +6,9 @@ import Home from './paginas/Home';
 import ListaLivros from './paginas/ListaLivros';
 import DetalhesLivro from './paginas/DetalhesLivro';
 import NaoEncontrada from './paginas/NaoEncontrada';
+import Cadastrar from './paginas/cadastrar';
 import Template from './componentes/tamplete';
 import {Routes, Route} from 'react-router-dom';
-
-
-
 
 function App() {
 
@@ -21,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/livros" element={<ListaLivros />} />
           <Route path="/livros/:id" element={<DetalhesLivro />} />
+          <Route path="/cadastro" element={<Cadastrar />} />
           <Route path="*" element={<NaoEncontrada />} />
         </Routes>
       </Template>

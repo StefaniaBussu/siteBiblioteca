@@ -20,6 +20,9 @@ function Template({ children }) {
               <li className="nav-item">
                 <Link className="nav-link" to="/livros">Lista de Livros</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/cadastro">Cadastro</Link>
+              </li>
             </ul>
           </div>
         </div>
